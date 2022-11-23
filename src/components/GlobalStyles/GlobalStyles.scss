@@ -1,0 +1,47 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+::before,
+::after {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg: white;
+  --white-bg: white;
+  --header-height: 60px;
+  --banner-height: 120px;
+  --sidebar-width-large: 256px;
+  --sidebar-width-small: 72px;
+}
+
+::selection {
+  background-color: rgb(89, 89, 196);
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html::-webkit-scrollbar {
+  border-radius: 0;
+  height: 8px;
+  width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+body {
+  overflow: unset;
+  font-size: 1.6rem !important;
+  line-height: 1.5 !important;
+  text-rendering: optimizeSpeed;
+}

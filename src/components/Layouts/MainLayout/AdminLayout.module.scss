@@ -1,0 +1,48 @@
+.banner {
+  height: var(--banner-height);
+  background-color: white;
+}
+
+.header {
+  height: var(--header-height);
+  background-color: #468faf;
+  position: fixed;
+  top: var(--banner-height);
+  right: 0;
+  left: 0;
+}
+
+.container {
+  margin-top: var(--header-height);
+  display: flex;
+
+  div {
+    &:first-child {
+      transition: width 0.3s ease-in-out;
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: calc(var(--header-height) + var(--banner-height));
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width-large);
+  background-color: #468faf;
+  color: white;
+}
+
+.sidebar-toggle {
+  width: var(--sidebar-width-small);
+}
+
+.content {
+  width: 100%;
+  padding: 2rem 4rem;
+  margin-left: var(--sidebar-width-large);
+}
+
+.content-toggle {
+  margin-left: var(--sidebar-width-small);
+}
