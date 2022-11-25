@@ -82,7 +82,7 @@ const authReducer = (state = initialState, action) => {
       return {
         ...state,
         login: {
-          user: { ...user, token: action.payload },
+          user: { ...state.login.user, token: action.payload },
         },
       };
     case LOGOUT_FROM_REDUX:

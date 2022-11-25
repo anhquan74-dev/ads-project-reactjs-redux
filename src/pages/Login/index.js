@@ -32,9 +32,7 @@ function Login() {
         ),
     }),
     onSubmit: (values) => {
-      setTimeout(() => {
-        dispatch(loginAccount(values));
-      }, 500);
+      dispatch(loginAccount(values));
     },
   });
 
